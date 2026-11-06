@@ -87,7 +87,26 @@
     footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     .disclaimer{max-width:900px;margin:18px auto 0;color:#d2c8ef;font-size:11px}
     .wa{position:fixed;right:20px;bottom:24px;width:58px;height:68px;display:grid;place-items:center;z-index:30;text-decoration:none}.wa img{width:100%;height:100%;object-fit:contain;display:block;filter:drop-shadow(0 8px 10px rgba(0,139,75,.25))}
-    @media(max-width:800px){
+    .join-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 18px;
+  border-radius:10px;
+  background:linear-gradient(110deg,#a28afa,#8065ed);
+  color:#fff;
+  font-size:12px;
+  font-weight:700;
+  box-shadow:0 8px 18px rgba(140,109,227,.22);
+  transition:.2s ease;
+  white-space:nowrap;
+}
+
+.join-btn:hover{
+  transform:translateY(-1px);
+  box-shadow:0 11px 24px rgba(140,109,227,.32);
+}
+@media(max-width:800px){
       nav{display:none;position:absolute;top:75px;left:0;right:0;background:white;padding:18px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:14px}
       nav.open{display:flex}.menu{display:block}
       .hero{padding-top:68px}.hero-inner,.intro-grid{grid-template-columns:1fr;gap:35px}
@@ -113,8 +132,21 @@
 <span>PT GLOBAL DIGITAL NIAGA TBK<small>SOLUSI DIGITAL UNTUK BISNIS GLOBAL</small></span>
     </a>
     <nav id="nav">
-      <a href="#tentang">Tentang</a><a href="#layanan">Layanan</a><a href="#cara-kerja">Cara kerja</a><a href="#alamat">Alamat</a><a href="#kontak">Kontak</a>
-    </nav>
+  <a href="#tentang">Tentang</a>
+  <a href="#layanan">Layanan</a>
+  <a href="#cara-kerja">Cara kerja</a>
+  <a href="#alamat">Alamat</a>
+  <a href="#kontak">Kontak</a>
+
+  <a
+    class="join-btn"
+    href="https://globaldigitalniaga.id"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Bergabung
+  </a>
+</nav>
     <button class="menu" id="menuBtn" aria-expanded="false">Menu ☰</button>
   </header>
 
